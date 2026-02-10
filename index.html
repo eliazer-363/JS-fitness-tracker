@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fitness Tracker</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>Fitness Tracker</h1>
+
+  <!-- Add Workout -->
+  <section>
+    <h2>Add Workout</h2>
+
+    <label>
+      Date:
+      <input type="date" id="date">
+    </label>
+    <br><br>
+
+    <label>
+      Day:
+      <select id="day">
+        <option value="">Select day</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+      </select>
+    </label>
+    <br><br>
+
+    <label>
+      Exercise:
+      <input type="text" id="exercise" placeholder="Bench Press">
+    </label>
+    <br><br>
+
+    <label>
+      Sets:
+      <input type="number" id="sets" min="1" placeholder="3">
+    </label>
+
+    <label>
+      Reps:
+      <input type="number" id="reps" min="1" placeholder="8">
+    </label>
+    <br><br>
+
+    <label>
+      Weight:
+      <input type="number" id="weight" min="1" placeholder="40">
+    </label>
+
+    <label>
+      Unit:
+      <select id="unit">
+        <option>lb</option>
+        <option>kg</option>
+        
+      </select>
+    </label>
+    <br><br>
+
+    <button id="add-workout-btn">Add Workout</button>
+  </section>
+
+  <!-- Workout List -->
+  <section>
+    <h2>Workout List</h2>
+    <div id="workout-list">
+      <!-- Workouts will be shown here -->
+    </div>
+  </section>
+
+  <!-- Progress -->
+  <section>
+    <h2>Progress</h2>
+
+    <label>
+      Exercise name:
+      <input type="text" id="progress-exercise-input" placeholder="Bench Press">
+    </label>
+    <button id="show-progress-btn">Show Progress</button>
+
+    <div id="progress-output"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
