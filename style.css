@@ -1,53 +1,4 @@
-/* body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 16px;
-  background-color: #fdfdfd;
-}
 
-h1 {
-  margin-bottom: 16px;
-}
-
-section {
-  margin-bottom: 24px;
-  padding: 12px;
-  border: 1px solid #252525;
-  border-radius: 10px;
-}
-
-label {
-  font-size: 14px;
-  margin-right: 8px;
-  
-  
-}
-
-input,
-select {
-  font-size: 14px;
-  padding: 4px;
-  margin-top: 4px;
-}
-
-button {
-  
-  margin-top: 8px;
-  padding: 6px 10px;
-  font-size: 14px;
-  border-radius: 10px;
-}
-
-.workout-item {
-  margin-bottom: 8px;
-}
-
-.workout-item button {
-  margin-left: 8px;
-  padding: 2px 6px;
-  font-size: 12px;
-} */
 
 /* Global */
 body {
@@ -61,7 +12,7 @@ body {
   border-radius: 12px;
 }
 
-/* Workout list items (JS-friendly) */
+
 #workout-list .list-group-item {
   display: flex;
   justify-content: space-between;
